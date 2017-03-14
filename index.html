@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <style>
+    .box1{
+      width: 100%;
+      height: 500px;
+      background-color: cyan;
+    }
+    .box2{
+      width: 100%;
+      height: 500px;
+      background-color: magenta;
+    }
+    .box3{
+      width: 100%;
+      height: 500px;
+      background-color: yellow;
+    }
+    .animate{
+      transition: all 1s ease-in-out;
+    }
+    .is-success{
+      background-color: lightseagreen;
+    }
+    .is-infomation{
+      background-color: dodgerblue;
+    }
+    .is-danger{
+      background-color: mediumvioletred;
+    }
+  </style>
+</head>
+<body>
+  <h1>Scroll-Plugin</h1>
+  <p>任意の要素までスクロールすると、任意のclassを付与できるプラグインです。</p>
+  <div class="box1 animate"></div>
+  <div class="box2 animate"></div>
+  <div class="box3 animate"></div>
+
+  <script src="js/scroll.js"></script>
+  <script>
+    $('.box1').scroll({
+      cssName: 'is-success',
+      distance: 0 // アニメーション発火距離
+    });
+    $('.box2').scroll({
+      cssName: 'is-infomation',
+      distance: 200 // アニメーション発火距離
+    });
+    $('.box3').scroll({
+      cssName: 'is-danger',
+      distance: 400 // アニメーション発火距離
+    });
+  </script>
+</body>
+</html>
