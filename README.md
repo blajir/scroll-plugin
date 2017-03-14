@@ -5,17 +5,15 @@
 ##概要
 スクロール用のプラグインです。
 任意の要素に対し、任意の位置までスクロールすると、任意のCSSを適用することができます。
-##使い方
-###HTML
-
-  <div class="box1 animate"></div>
+##使い方　　
+###HTML　　
+  　　<div class="box1 animate"></div>
   
-###script
-
-  $('.box1').scroll({
-    cssName: 'is-success', // 適用したいCSS
-    distance: 0 // アニメーション発火距離
-  });
+###script　　
+    $('.box1').scroll({
+      cssName: 'is-success', // 適用したいCSS
+      distance: 0 // アニメーション発火距離
+    });
 
 対象のDOM要素に対して、実行します。
 ## 必要とするもの
