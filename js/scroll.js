@@ -1,6 +1,6 @@
 (function ($) {
   $.fn.scroll = function(options) {
-    var common = {}
+    var common = common || {};
 
     return this.each(function () {
       // デフォルト値とオプション値をマージ
